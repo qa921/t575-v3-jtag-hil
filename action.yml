@@ -1,0 +1,10 @@
+name: JTAG HIL
+description: Flash and validate boards over JTAG
+runs:
+  using: composite
+  steps:
+    - run: ./flash-and-test.sh
+      shell: bash
+permissions:
+  contents: read
+  checks: write
